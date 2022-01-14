@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Four in line</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/game.css">
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="status-bar">
+            <div class="player">Howie</div>
+            <div class="stats"> 01 : 19 </div>
+            <div class="player">Trzyq</div>
+        </header>
+        <main class="game">
+            <section class="board">
+                <% for (let y = 1; y <= 6; y++) { for (let x = 1; x <= 7; x++) { %>
+                <div class="field" id="<%= x %>/<%= y %>"></div>
+                <% } } %>
+            </section>
+        </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>

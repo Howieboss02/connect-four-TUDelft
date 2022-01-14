@@ -1,0 +1,57 @@
+.status-bar {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.status-bar > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player {
+    grid-row: 2;
+    border: 2px solid black;
+    padding: .5em;
+    font-size: 2em;
+}
+
+.player:nth-child(1) {
+    grid-column: 1;
+}
+
+.player:nth-child(3) {
+    grid-column: 3;
+}
+
+.stats {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
+    font-size: 2.5em;
+    border: 2px solid black;
+}
+
+.game {
+    padding: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr); 
+    height: 810px;
+    background-color: lightblue;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.field {
+    background-color: white;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+}
