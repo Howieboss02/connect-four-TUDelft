@@ -9,9 +9,17 @@
   <body>
     <div class="wrapper">
         <header class="status-bar">
-            <div class="player">Howie</div>
+            <div class="player" id="opponent">
+                <div class="color"></div>
+                <span>Howie</span>
+                <div class="turn-indicator"></div>
+            </div>
             <div class="stats"> 01 : 19 </div>
-            <div class="player">Trzyq</div>
+            <div class="player" id="me">
+                <div class="turn-indicator"></div>
+                <span>Trzyq</span>
+                <div class="color"></div>
+            </div>
         </header>
         <main class="game">
             <section class="board">

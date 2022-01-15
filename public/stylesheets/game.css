@@ -1,7 +1,7 @@
 .status-bar {
     display: grid;
-    grid-template-columns: 3fr 4fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 2.5fr 3fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .status-bar > div {
@@ -28,13 +28,39 @@
     grid-column: 3;
 }
 
+.player > .color {
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid #777;
+    border-radius: .7em;
+    box-sizing: border-box;
+}
+
+.turn-indicator {
+    border-radius: 5px;
+    border: solid deepskyblue;
+    border-width: 0 .4em .4em 0;
+    display: absolute;
+    padding: .3em;
+}
+
+
+#opponent > .turn-indicator {
+    transform: rotate(135deg);
+}
+
+#me > .turn-indicator {
+    transform: rotate(-45deg);
+    /*visibility: hidden;*/
+}
+
 .stats {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column: 2;
     background-color: deepskyblue;
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .game {
