@@ -10,10 +10,12 @@
     <div class="wrapper">
         <main class="welcome">
             <img class="logo" src="images/logo_big.png" alt="logo">
-            <p class="description">blah</p>
+            <p class="description">To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally.</p>
             <img class="name" src="images/connect_logo_big.png" alt="game name">
-            <input type="text" name="player-name" id="player-name">
-            <button id="play-btn">PLAY!</button>
+            <form action="/play" method="post">
+                <input placeholder="Your nickname" type="text" name="playerName" id="player-name">
+                <button type="submit" id="play-btn">PLAY!</button>
+            </form>
             <div class="stat">stat 1</div>
             <div class="stat">stat 2</div>
             <div class="stat">stat 3</div>

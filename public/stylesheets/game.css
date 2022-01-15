@@ -73,7 +73,7 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(7, 1fr); 
-    height: 60vh;
+    height: calc(80vh * 6/7);
     background-color: #99d2f2;
     border-radius: 20px;
     justify-items: center;
@@ -88,5 +88,15 @@
     width: 7vh;
     border-radius: 50%;
     margin: 0 auto 0 auto;
-    /*border: #aaa solid 3px;*/
+    box-sizing: border-box;
+}
+
+.blue-field {
+    background: radial-gradient(deepskyblue 50%, #4cd2ff 50%);
+    border: #777 solid 2px;
+}
+
+.white-field {
+    background: radial-gradient(#fff 50%, #ddd 50%);
+    border: #777 solid 2px;
 }
