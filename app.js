@@ -21,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/play', router);
+app.get('/', router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

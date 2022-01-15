@@ -18,6 +18,7 @@
     font-size: 2em;
     background-color: whitesmoke;
     color: #333;
+    box-shadow: #333 0 0 10px;
 }
 
 .player:nth-child(1) {
@@ -61,6 +62,7 @@
     background-color: deepskyblue;
     color: white;
     font-size: 2em;
+    box-shadow: #333 0 0 10px;
 }
 
 .game {
@@ -72,10 +74,12 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(7, 1fr); 
     height: 60vh;
-    background-color: lightblue;
+    background-color: #99d2f2;
     border-radius: 20px;
     justify-items: center;
     align-items: center;
+    box-shadow: #333 0 0 10px;
+    /*border: #aaa solid 3px;*/
 }
 
 .field {
@@ -84,4 +88,5 @@
     width: 7vh;
     border-radius: 50%;
     margin: 0 auto 0 auto;
+    /*border: #aaa solid 3px;*/
 }
